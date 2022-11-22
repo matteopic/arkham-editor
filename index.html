@@ -8,7 +8,7 @@
 		<title>Arkham Editor</title>
 
 		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 		<link rel="stylesheet" href="fonts/arkhamicons.css"></link>
 		<style>
@@ -37,12 +37,6 @@
 			<div class="row">
 				<div class="col">
 					<div class="btn-group insertButtons m-1" role="group">
-						<button type="button" class="btn btn-outline-dark arkhamiconsskull" data-insert="[skull]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconscultist" data-insert="[cultist]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconstablet" data-insert="[tablet]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconselder_thing" data-insert="[elder_thing]"></button>
-					</div>
-					<div class="btn-group insertButtons m-1" role="group">
 						<button type="button" class="btn btn-outline-dark arkhamiconselder_sign" data-insert="[elder_sign]"></button>
 						<button type="button" class="btn btn-outline-dark arkhamiconsauto_fail" data-insert="[auto_fail]"></button>
 					</div>
@@ -56,6 +50,12 @@
 						<button type="button" class="btn btn-outline-dark arkhamiconsmystic" data-insert="[mystic]"></button>
 						<button type="button" class="btn btn-outline-dark arkhamiconsrogue" data-insert="[rogue]"></button>
 						<button type="button" class="btn btn-outline-dark arkhamiconssurvivor" data-insert="[survivor]"></button>
+					</div>
+					<div class="btn-group insertButtons m-1" role="group">
+						<button type="button" class="btn btn-outline-dark arkhamiconsskull" data-insert="[skull]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconscultist" data-insert="[cultist]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconstablet" data-insert="[tablet]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconselder_thing" data-insert="[elder_thing]"></button>
 					</div>
 					<div class="btn-group insertButtons m-1" role="group">
 						<button type="button" class="btn btn-outline-dark arkhamiconswillpower" data-insert="[willpower]"></button>
@@ -84,7 +84,7 @@
 					<textarea id="source"></textarea>
 				</div>
 				<div class="col align-self-end">
-					<button type="button" class="btn btn-dark btn-sm  m-1" id="btnCopy" title="Copy to clipboard"><i class="bi bi-clipboard"></i></button>
+					<button type="button" class="btn btn-outline-dark btn-sm  m-1" id="btnCopy" title="Copy to clipboard"><i class="bi bi-clipboard"></i></button>
 					<textarea id="result"></textarea>
 				</div>
 			</div>
@@ -94,7 +94,17 @@
 				</div>
 			</div>
 		</div>
-		
+		<footer class="hidden-print">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<p>
+							Please post bug reports and feature requests on <a href="https://github.com/matteopic/arkham-editor"><i class="bi bi-github"></i> GitHub</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 		<script>
