@@ -8,9 +8,11 @@ This simple utility helps the editing and previewing the data for
 How to use it
 -------------
 
-Type your text on the left side, use the buttons above to insert appropriate formatting code.
-When you are happy with the result shown below, yuo can copy the result on the right and paste to contribute the arkham projects.
-You can also copy text from the projects and paste it on the right area to edit it in comfortable way.
+Launch Arkham Editor at the following URL: https://matteopic.github.io/arkham-editor/  
+
+Type your text on the left side, use the buttons on top to insert appropriate formatting code.
+When you are happy with the result shown in the bottom, you can copy the result on the right and paste as JSON string.
+You can copy also some text from the projects and paste it on the right area, so you can edit it in comfortable way.
 
 Samples
 -------
