@@ -30,6 +30,7 @@
 		.text-center{ text-align: center; }
 
 		.trait{ font-weight:bold; font-style: italic; }
+		cite::before { content: "\2013\FEFF"; }
 		</style>
 	</head>
 	<body>
@@ -77,6 +78,7 @@
 						<button type="button" class="btn btn-outline-dark btn-sm" data-wrap="<u>$</u>" style="text-decoration: underline;">u</button>
 						<button type="button" class="btn btn-outline-dark btn-sm" data-wrap="<b>$</b>" style="font-weight:bold;" accesskey="b">B</button>
 						<button type="button" class="btn btn-outline-dark btn-sm" data-wrap="<i>$</i>" style="font-style: italic">I</button>
+						<button type="button" class="btn btn-outline-dark btn-sm" data-wrap="<cite>$</cite>" style="font-style: italic">cite</button>
 						<button type="button" class="btn btn-outline-dark btn-sm trait" data-wrap="[[$]]" accesskey="t">trait</button>
 						<button type="button" class="btn btn-outline-dark btn-sm" data-insert="<b>(→Rx)</b>." style="font-weight:bold;">(→Rx).</button>
 					</div>
