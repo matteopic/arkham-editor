@@ -10,6 +10,9 @@
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="fonts/arkhamicons.css"></link>
 		<style>
 		#source{
@@ -18,45 +21,54 @@
 			min-height: 150px;
 		}
 
-		#result, #md{
+		#result{
 			display:block;
 			width: 100%;
 			min-height: 150px;
 			font-family: monospace;
 		}
+		#md { border: 1px solid black; border-radius: 4px; padding: 1rem; min-height: 150px;}
 		#md p { white-space: pre-line;}
+
 		.btn-bar{ padding: 0.5rem; }
 		.btn[class^="arkhamicons"]{ font-size: 1.1rem; }
 		.text-center{ text-align: center; }
 
 		.trait{ font-weight:bold; font-style: italic; }
 		cite::before { content: "\2013\FEFF"; }
+		.card-text{ font-family: 'Amiri', sans-serif;}
 		</style>
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col">
+				<div class="col-md">
 					<div class="btn-group insertButtons m-1" role="group">
-						<button type="button" class="btn btn-outline-dark arkhamiconselder_sign" data-insert="[elder_sign]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconsauto_fail" data-insert="[auto_fail]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconselder_sign" data-insert="[elder_sign]" style="background-color:darkcyan;color:white;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsauto_fail" data-insert="[auto_fail]" style="background-color:darkred; color:white;"></button>
 					</div>
 					<div class="btn-group insertButtons m-1" role="group">
-						<button type="button" class="btn btn-outline-dark arkhamiconscurse" data-insert="[curse]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconsbless" data-insert="[bless]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconscurse" data-insert="[curse]" style="color:purple;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsbless" data-insert="[bless]" style="color:goldenrod;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsfrost" data-insert="[frost]" style="color:navy;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsseal_a" data-insert="[seal_a]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsseal_b" data-insert="[seal_b]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsseal_c" data-insert="[seal_c]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsseal_d" data-insert="[seal_d]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsseal_e" data-insert="[seal_e]"></button>
 					</div>
 					<div class="btn-group insertButtons m-1" role="group">
-						<button type="button" class="btn btn-outline-dark arkhamiconsguardian" data-insert="[guardian]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconsseeker" data-insert="[seeker]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconsmystic" data-insert="[mystic]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconsrogue" data-insert="[rogue]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconssurvivor" data-insert="[survivor]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsguardian" data-insert="[guardian]" style="background-color:navy;color:white;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsseeker" data-insert="[seeker]"  style="background-color:darkgoldenrod;color:white;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsmystic" data-insert="[mystic]" style="background-color:blueviolet;color:white;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsrogue" data-insert="[rogue]"  style="background-color:green;color:white;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconssurvivor" data-insert="[survivor]"  style="background-color:darkred;color:white;"></button>
 					</div>
 					<div class="btn-group insertButtons m-1" role="group">
-						<button type="button" class="btn btn-outline-dark arkhamiconsskull" data-insert="[skull]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconscultist" data-insert="[cultist]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconstablet" data-insert="[tablet]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconselder_thing" data-insert="[elder_thing]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsskull" data-insert="[skull]" style="color:maroon;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconscultist" data-insert="[cultist]" style="color:darkgreen;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconstablet" data-insert="[tablet]" style="color:navy;"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconselder_thing" data-insert="[elder_thing]" style="color:darkolivegreen;"></button>
 					</div>
 					<div class="btn-group insertButtons m-1" role="group">
 						<button type="button" class="btn btn-outline-dark arkhamiconswillpower" data-insert="[willpower]"></button>
@@ -85,14 +97,12 @@
 					<button  type="button" class="btn btn-outline-dark btn-sm"  id="btnFixSpaces" title="fix spaces"><i class="bi bi-card-text"></i></button>				
 					<textarea id="source"></textarea>
 				</div>
-				<div class="col align-self-end">
-					<button type="button" class="btn btn-outline-dark btn-sm  m-1" id="btnCopy" title="Copy to clipboard"><i class="bi bi-clipboard"></i></button>
-					<textarea id="result"></textarea>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col p-2">
+				<div class="col-md card-text  align-self-end">
 					<div id="md"></div>
+				</div>
+				<div class="col-md align-self-end">
+					<button type="button" class="btn btn-outline-dark btn-sm  m-1" id="btnCopy" title="Copy JSON to clipboard"><i class="bi bi-clipboard"></i></button>
+					<textarea id="result"></textarea>
 				</div>
 			</div>
 		</div>
@@ -110,7 +120,8 @@
 		<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 		<script>
-			const tags = ["curse","bless", "skull", "cultist", "tablet", "elder_thing", "elder_sign", "auto_fail", "guardian", "seeker", "mystic", "rogue", "survivor", "willpower", "intellect", "combat", "agility", "neutral", "wild", "per_investigator", "action", "reaction", "free"];
+			const tags = ["curse","bless", "skull", "cultist", "tablet", "elder_thing", "elder_sign", "auto_fail", "guardian", "seeker", "mystic", "rogue", "survivor", "willpower", "intellect", "combat", "agility", "neutral", "wild", "per_investigator", "action", "reaction", "free",
+		"frost", "seal_a", "seal_b", "seal_c", "seal_d", "seal_e"];
 		
 			jQuery(()=>{
 				const onSourceChange = (evt)=>{
