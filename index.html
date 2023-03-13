@@ -253,6 +253,8 @@
 						myField.value = myField.value.substring(0, startPos)
 							+ myValue
 							+ myField.value.substring(endPos, myField.value.length);
+
+						myField.setSelectionRange(endPos + myValue.length, endPos + myValue.length);
 					} else {
 						myField.value += myValue;
 					}
@@ -274,6 +276,8 @@
 						const after = myField.value.substring(endPos, myField.value.length);
 						const middle = myField.value.substring(startPos, endPos);
 						myField.value = before + prefix + middle + suffix + after;
+
+						myField.setSelectionRange(before.length, before.length + prefix.length + middle.length + suffix.length);
 					} else {
 						myField.value += prefix + suffix;
 					}
