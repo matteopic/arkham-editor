@@ -37,6 +37,7 @@
 		.trait{ font-weight:bold; font-style: italic; }
 		cite::before { content: "\2013\FEFF"; }
 		.card-text{ font-family: 'Amiri', sans-serif;}
+		blockquote { border-left-style: double; padding-left: 1rem;}
 		</style>
 	</head>
 	<body>
@@ -92,15 +93,22 @@
 						<button type="button" class="btn btn-outline-dark btn-sm" data-wrap="<i>$</i>" style="font-style: italic">I</button>
 						<button type="button" class="btn btn-outline-dark btn-sm" data-wrap="<cite>$</cite>" style="font-style: italic">cite</button>
 						<button type="button" class="btn btn-outline-dark btn-sm trait" data-wrap="[[$]]" accesskey="t">trait</button>
-						<button type="button" class="btn btn-outline-dark btn-sm" data-insert="<b>(→Rx)</b>." style="font-weight:bold;">(→Rx).</button>
+					</div>
+					<div class="btn-group insertButtons m-1" role="group">
+						<button type="button" class="btn btn-outline-dark btn-sm" data-insert="<b>(→Rx)</b>." style="font-weight:bold;" title="Resolution x">(→Rx).</button>
+						<button type="button" class="btn btn-outline-dark btn-sm" data-wrap="<blockquote><i>$</i></blockquote>" title="Blockquote">&#x2016; <span style="font-style: italic;">Abc</span></button>
+						<button type="button" class="btn btn-outline-dark btn-sm" data-insert="<hr>" style="font-weight:bold;" title="Horizontal Line">&#x2015;</button>
 					</div>
 					<button  type="button" class="btn btn-outline-dark btn-sm"  id="btnFixSpaces" title="fix spaces"><i class="bi bi-card-text"></i></button>				
+					<h3>ArkhamDB Format</h3>
 					<textarea id="source"></textarea>
 				</div>
 				<div class="col-md card-text  align-self-end">
+					<h3>Preview</h3>
 					<div id="md"></div>
 				</div>
 				<div class="col-md align-self-end">
+					<h3>ArkhamDB JSON Value</h3>
 					<button type="button" class="btn btn-outline-dark btn-sm  m-1" id="btnCopy" title="Copy JSON to clipboard"><i class="bi bi-clipboard"></i></button>
 					<textarea id="result"></textarea>
 				</div>
@@ -284,14 +292,14 @@
 				}
 				
 				const onInsertButtonClick = (evt)=>{
-					const value = $(evt.target).attr('data-insert');
+					const value = $(evt.currentTarget).attr('data-insert');
 					insertAtCursor( $source.get(0), value);
 					rewriteText( $source.val() );
 					$source.focus();
 				}
 
 				const onWrapButtonClick = (evt)=>{
-					const value = $(evt.target).attr('data-wrap');
+					const value = $(evt.currentTarget).attr('data-wrap');
 					const tokens = value.split('$');
 					wrapAtCursor( $source.get(0), tokens[0], tokens[1]);
 					rewriteText( $source.val() );
