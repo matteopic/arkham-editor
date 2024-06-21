@@ -18,16 +18,16 @@
 		#source{
 			display:block;
 			width: 100%;
-			min-height: 150px;
+			min-height: 250px;
 		}
 
 		#result{
 			display:block;
 			width: 100%;
-			min-height: 150px;
+			min-height: 250px;
 			font-family: monospace;
 		}
-		#md { border: 1px solid black; border-radius: 4px; padding: 1rem; min-height: 150px;}
+		#md { border: 1px solid black; border-radius: 4px; padding: 1rem; min-height: 250px;}
 		#md p { white-space: pre-line;}
 
 		.btn-bar{ padding: 0.5rem; }
@@ -100,16 +100,24 @@
 						<button type="button" class="btn btn-outline-dark btn-sm" data-insert="<hr>" style="font-weight:bold;" title="Horizontal Line">&#x2015;</button>
 					</div>
 					<button  type="button" class="btn btn-outline-dark btn-sm"  id="btnFixSpaces" title="fix spaces"><i class="bi bi-card-text"></i></button>				
+				</div>
+				<div class="col-md"></div>
+				<div class="col-md d-flex">
+					<button type="button" class="btn btn-outline-dark btn-sm  m-1  align-self-end" id="btnCopy" title="Copy JSON to clipboard"><i class="bi bi-clipboard"></i></button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md">
 					<h3>ArkhamDB Format</h3>
 					<textarea id="source"></textarea>
 				</div>
-				<div class="col-md card-text  align-self-end">
+
+				<div class="col-md card-text">
 					<h3>Preview</h3>
 					<div id="md"></div>
 				</div>
-				<div class="col-md align-self-end">
+				<div class="col-md">
 					<h3>ArkhamDB JSON Value</h3>
-					<button type="button" class="btn btn-outline-dark btn-sm  m-1" id="btnCopy" title="Copy JSON to clipboard"><i class="bi bi-clipboard"></i></button>
 					<textarea id="result"></textarea>
 				</div>
 			</div>
