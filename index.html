@@ -83,7 +83,7 @@
 						<button type="button" class="btn btn-outline-dark arkhamiconsper_investigator" data-insert="[per_investigator]"></button>
 						<button type="button" class="btn btn-outline-dark arkhamiconsaction" data-insert="[action]"></button>
 						<button type="button" class="btn btn-outline-dark arkhamiconsreaction" data-insert="[reaction]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconsfree" data-insert="[free]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsfree" data-insert="[fast]"></button>
 					</div>
 					<div class="btn-group insertButtons m-1" role="group">
 						<button type="button" class="btn btn-outline-dark btn-sm" data-insert="&hellip;">&hellip;</button>
@@ -161,8 +161,7 @@
 					.replace(/\uF257/g, '[mystic]')
 					.replace(/\uF258/g, '[seeker]')
 					.replace(/\uF259/g, '[action]')
-					.replace(/^=/gm, '-')
-					.replace(/\.\.\./g, '\u2026');
+					.replace(/^=/gm, '-');
 
 					const result = txt
 					.replace(/\r?\n/g, '\\n')
