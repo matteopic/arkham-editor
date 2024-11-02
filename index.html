@@ -83,7 +83,7 @@
 						<button type="button" class="btn btn-outline-dark arkhamiconsper_investigator" data-insert="[per_investigator]"></button>
 						<button type="button" class="btn btn-outline-dark arkhamiconsaction" data-insert="[action]"></button>
 						<button type="button" class="btn btn-outline-dark arkhamiconsreaction" data-insert="[reaction]"></button>
-						<button type="button" class="btn btn-outline-dark arkhamiconsfree" data-insert="[free]"></button>
+						<button type="button" class="btn btn-outline-dark arkhamiconsfree" data-insert="[fast]"></button>
 					</div>
 					<div class="btn-group insertButtons m-1" role="group">
 						<button type="button" class="btn btn-outline-dark btn-sm" data-insert="&hellip;">&hellip;</button>
@@ -136,7 +136,7 @@
 		<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 		<script>
-			const tags = ["curse","bless", "skull", "cultist", "tablet", "elder_thing", "elder_sign", "auto_fail", "guardian", "seeker", "mystic", "rogue", "survivor", "willpower", "intellect", "combat", "agility", "neutral", "wild", "per_investigator", "action", "reaction", "free",
+			const tags = ["curse","bless", "skull", "cultist", "tablet", "elder_thing", "elder_sign", "auto_fail", "guardian", "seeker", "mystic", "rogue", "survivor", "willpower", "intellect", "combat", "agility", "neutral", "wild", "per_investigator", "action", "reaction", "free", "fast",
 		"frost", "seal_a", "seal_b", "seal_c", "seal_d", "seal_e"];
 		
 			jQuery(()=>{
@@ -155,14 +155,14 @@
 					.replace(/\uF263/g, '[per_investigator]')
 					.replace(/\uF26D/g, '[reaction]')
 					.replace(/\uF25A/g, '[free]')
+					.replace(/\uF25A/g, '[fast]')
 					.replace(/\uF254/g, '[rogue]')
 					.replace(/\uF255/g, '[survivor]')
 					.replace(/\uF256/g, '[guardian]')
 					.replace(/\uF257/g, '[mystic]')
 					.replace(/\uF258/g, '[seeker]')
 					.replace(/\uF259/g, '[action]')
-					.replace(/^=/gm, '-')
-					.replace(/\.\.\./g, '\u2026');
+					.replace(/^=/gm, '-');
 
 					const result = txt
 					.replace(/\r?\n/g, '\\n')
