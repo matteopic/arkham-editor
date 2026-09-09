@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'arkhamicons';
-  src:  url('arkhamicons.eot');
-  src:  url('arkhamicons.eot') format('embedded-opentype'),
-    url('arkhamicons.ttf') format('truetype'),
-    url('arkhamicons.woff') format('woff'),
-    url('arkhamicons.svg') format('svg');
+  src:  url('arkhamicons.eot?qfohqu');
+  src:  url('arkhamicons.eot?qfohqu#iefix') format('embedded-opentype'),
+    url('arkhamicons.ttf?qfohqu') format('truetype'),
+    url('arkhamicons.woff?qfohqu') format('woff'),
+    url('arkhamicons.svg?qfohqu#arkhamicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,100 +25,327 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.arkhamiconsguardian:before {
-  content: "\e900";
-}
-.arkhamiconsseeker:before {
-  content: "\e901";
-}
-.arkhamiconsmystic:before {
-  content: "\e902";
-}
-.arkhamiconsrogue:before {
-  content: "\e903";
-}
-.arkhamiconssurvivor:before {
+.arkhamiconsseal_e:before {
   content: "\e904";
 }
-.arkhamiconswillpower:before {
+.arkhamiconsseal_d:before {
   content: "\e905";
 }
-.arkhamiconsintellect:before {
+.arkhamiconsseal_c:before {
   content: "\e906";
 }
-.arkhamiconscombat:before {
+.arkhamiconsseal_b:before {
   content: "\e907";
 }
-.arkhamiconsagility:before {
+.arkhamiconsseal_a:before {
   content: "\e908";
 }
+.arkhamiconstarot_inverted:before {
+  content: "\41";
+}
+.arkhamiconstarot:before {
+  content: "\42";
+}
+.arkhamiconsaccessory_inverted:before {
+  content: "\43";
+}
+.arkhamiconsaccessory:before {
+  content: "\44";
+}
+.arkhamiconsally_inverted:before {
+  content: "\45";
+}
+.arkhamiconsally:before {
+  content: "\46";
+}
+.arkhamiconsarcane_inverted:before {
+  content: "\47";
+}
+.arkhamiconsarcane_x2_inverted:before {
+  content: "\48";
+}
+.arkhamiconsarcane_x2:before {
+  content: "\49";
+}
+.arkhamiconsarcane:before {
+  content: "\4a";
+}
+.arkhamiconsbody_inverted:before {
+  content: "\4b";
+}
+.arkhamiconsbody:before {
+  content: "\4c";
+}
+.arkhamiconshand_x2_inverted:before {
+  content: "\4e";
+}
+.arkhamiconshand_x2:before {
+  content: "\4f";
+}
+.arkhamiconshand_inverted:before {
+  content: "\4d";
+}
+.arkhamiconshand:before {
+  content: "\50";
+}
+.arkhamiconshead_inverted:before {
+  content: "\5f";
+}
+.arkhamiconshead:before {
+  content: "\60";
+}
+.arkhamiconshealth:before {
+  content: "\51";
+}
+.arkhamiconssanity:before {
+  content: "\52";
+}
+.arkhamiconssanity_inverted:before {
+  content: "\53";
+}
+.arkhamiconshealth_inverted:before {
+  content: "\54";
+}
+.arkhamiconsstar-fill:before {
+  content: "\55";
+}
+.arkhamiconsstar-outline:before {
+  content: "\56";
+}
+.arkhamiconsstar:before {
+  content: "\57";
+}
+.arkhamiconsx-fill:before {
+  content: "\58";
+}
+.arkhamiconsx-outline:before {
+  content: "\59";
+}
+.arkhamiconsx:before {
+  content: "\5a";
+}
+.arkhamiconsnum0-fill:before {
+  content: "\5b";
+}
+.arkhamiconsnum0-outline:before {
+  content: "\5d";
+}
+.arkhamiconsnum0:before {
+  content: "\7b";
+}
+.arkhamiconsnum1-fill:before {
+  content: "\7d";
+}
+.arkhamiconsnum1-outline:before {
+  content: "\3b";
+}
+.arkhamiconsnum1:before {
+  content: "\3a";
+}
+.arkhamiconsnum2-fill:before {
+  content: "\27";
+}
+.arkhamiconsnum2-outline:before {
+  content: "\22";
+}
+.arkhamiconsnum2:before {
+  content: "\2c";
+}
+.arkhamiconsnum3-fill:before {
+  content: "\3c";
+}
+.arkhamiconsnum3-outline:before {
+  content: "\2e";
+}
+.arkhamiconsnum3:before {
+  content: "\3e";
+}
+.arkhamiconsnum4-fill:before {
+  content: "\2f";
+}
+.arkhamiconsnum4-outline:before {
+  content: "\e943";
+}
+.arkhamiconsnum4:before {
+  content: "\31";
+}
+.arkhamiconsnum5-fill:before {
+  content: "\21";
+}
+.arkhamiconsnum5-outline:before {
+  content: "\32";
+}
+.arkhamiconsnum5:before {
+  content: "\40";
+}
+.arkhamiconsnum6-fill:before {
+  content: "\33";
+}
+.arkhamiconsnum6-outline:before {
+  content: "\23";
+}
+.arkhamiconsnum6:before {
+  content: "\34";
+}
+.arkhamiconsnum7-fill:before {
+  content: "\24";
+}
+.arkhamiconsnum7-outline:before {
+  content: "\35";
+}
+.arkhamiconsnum7:before {
+  content: "\25";
+}
+.arkhamiconsnum8-fill:before {
+  content: "\36";
+}
+.arkhamiconsnum8-outline:before {
+  content: "\5e";
+}
+.arkhamiconsnum8:before {
+  content: "\37";
+}
+.arkhamiconsnum9-fill:before {
+  content: "\26";
+}
+.arkhamiconsnum9-outline:before {
+  content: "\38";
+}
+.arkhamiconsnum9:before {
+  content: "\2a";
+}
+.arkhamiconsnumNull-fill:before {
+  content: "\39";
+}
+.arkhamiconsnumNull-outline:before {
+  content: "\28";
+}
+.arkhamiconsnumNull:before {
+  content: "\30";
+}
+.arkhamiconsguardian:before {
+  content: "\29";
+}
+.arkhamiconsseeker:before {
+  content: "\62";
+}
+.arkhamiconsmystic:before {
+  content: "\63";
+}
+.arkhamiconsrogue:before {
+  content: "\64";
+}
+.arkhamiconssurvivor:before {
+  content: "\65";
+}
+.arkhamiconswillpower:before {
+  content: "\66";
+}
+.arkhamiconsintellect:before {
+  content: "\67";
+}
+.arkhamiconscombat:before {
+  content: "\68";
+}
+.arkhamiconsagility:before {
+  content: "\69";
+}
 .arkhamiconswild:before {
-  content: "\e909";
+  content: "\6a";
 }
 .arkhamiconselder_sign:before {
-  content: "\e90a";
+  content: "\6b";
 }
 .arkhamiconsneutral:before {
-  content: "\e90b";
+  content: "\6c";
 }
 .arkhamiconsskull:before {
-  content: "\e90c";
+  content: "\6d";
 }
 .arkhamiconscultist:before {
-  content: "\e90d";
+  content: "\6e";
 }
 .arkhamiconstablet:before {
-  content: "\e90e";
+  content: "\6f";
 }
 .arkhamiconselder_thing:before {
-  content: "\e90f";
+  content: "\70";
 }
 .arkhamiconsauto_fail:before {
-  content: "\e910";
+  content: "\71";
 }
 .arkhamiconsper_investigator:before {
-  content: "\e911";
+  content: "\72";
 }
 .arkhamiconsweakness:before {
-  content: "\e912";
+  content: "\73";
 }
 .arkhamiconsaction:before {
-  content: "\e913";
+  content: "\74";
 }
 .arkhamiconsreaction:before {
-  content: "\e914";
+  content: "\75";
 }
-.arkhamiconsfast:before,
 .arkhamiconsfree:before {
-  content: "\e915";
+  content: "\76";
 }
 .arkhamiconsbullet:before {
-  content: "\e916";
+  content: "\77";
 }
 .arkhamiconsguide_bullet:before {
-  content: "\e917";
+  content: "\78";
 }
 .arkhamiconscurse:before {
-  content: "\e918";
+  content: "\79";
 }
 .arkhamiconsbless:before {
-  content: "\e919";
+  content: "\7a";
+}
+.arkhamiconsparallel:before {
+  content: "\e92d";
+}
+.arkhamiconsskill_willpower:before {
+  content: "\e90a";
+}
+.arkhamiconsskill_willpower_inverted:before {
+  content: "\e90b";
+}
+.arkhamiconsskill_intellect:before {
+  content: "\e90c";
+}
+.arkhamiconsskill_intellect_inverted:before {
+  content: "\e90d";
+}
+.arkhamiconsskill_combat:before {
+  content: "\e90e";
+}
+.arkhamiconsskill_combat_inverted:before {
+  content: "\e92e";
+}
+.arkhamiconsskill_agility:before {
+  content: "\e92f";
+}
+.arkhamiconsskill_agility_inverted:before {
+  content: "\e930";
+}
+.arkhamiconsskill_wild:before {
+  content: "\e931";
+}
+.arkhamiconsskill_wild_inverted:before {
+  content: "\e932";
 }
 .arkhamiconsfrost:before {
-  content: "\e91a";
+  content: "\e900";
 }
-.arkhamiconsseal_a:before {
-  content: "\e91b";
+.arkhamiconsblood:before {
+  content: "\e909";
 }
-.arkhamiconsseal_b:before {
-  content: "\e91c";
+.arkhamiconscodex:before {
+  content: "\e901";
 }
-.arkhamiconsseal_c:before {
-  content: "\e91d";
+.arkhamiconsnight:before {
+  content: "\e902";
 }
-.arkhamiconsseal_d:before {
-  content: "\e91e";
-}
-.arkhamiconsseal_e:before {
-  content: "\e91f";
+.arkhamiconsday:before {
+  content: "\e903";
 }
